@@ -17,9 +17,10 @@ dependencies:
   dynamic_theme: ^1.0.1
   firebase_core: ^0.5.0
   firebase_auth: ^0.18.0+1
-  line_awesome_flutter: ^1.0.1
+  font_awesome_flutter: ^8.11.0
   bottom_navy_bar: ^5.6.0
   google_sign_in: ^4.5.3
+  url_launcher: ^5.7.10
 
 dev_dependencies:
   flutter_test:
@@ -39,3 +40,4 @@ flutter:
 
   assets:
     - assets/images/
+    - assets/icons/

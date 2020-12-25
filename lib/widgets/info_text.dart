@@ -8,24 +8,29 @@ class InfoText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return Column(
       mainAxisSize: MainAxisSize.min,
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          '$type: ',
-          style: TextStyle(
-            color: Colors.blueGrey[300],
-            fontSize: 16,
+        Center(
+          child: Text(
+            '$type:',
+
+            style: TextStyle(
+              color: Colors.blueGrey[300],
+              fontSize: 16,
+            ),
           ),
         ),
-        Flexible(
-          child: Text(
-            text,
-            style: TextStyle(
-              color: Colors.blueGrey[100],
-              fontSize: 16,
+        Center(
+          child: Flexible(
+            child: Text(
+              text,
+              style: TextStyle(
+                color: Colors.blueGrey[100],
+                fontSize: 16,
+              ),
             ),
           ),
         )
