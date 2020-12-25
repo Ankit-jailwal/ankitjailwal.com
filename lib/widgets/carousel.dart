@@ -1,6 +1,8 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:explore/widgets/responsive.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:explore/widgets/bottom_bar.dart';
 
 class DestinationCarousel extends StatefulWidget {
   @override
@@ -27,12 +29,21 @@ class _DestinationCarouselState extends State<DestinationCarousel> {
   ];
 
   final List<String> places = [
-    'ASIA',
-    'AFRICA',
-    'EUROPE',
-    'SOUTH AMERICA',
-    'AUSTRALIA',
-    'ANTARCTICA',
+    'MAATI',
+    'TRADEGOOD',
+    'BLOGX',
+    'W-GSIM',
+    'EMP',
+    'RADAR',
+  ];
+
+  final List<String> project_link = [
+    'https://github.com/Ankit-jailwal/ankitjailwal.com',
+    'https://github.com/Ankit-jailwal/ankitjailwal.com',
+    'https://github.com/Ankit-jailwal/ankitjailwal.com',
+    'https://github.com/Ankit-jailwal/ankitjailwal.com',
+    'https://github.com/Ankit-jailwal/ankitjailwal.com',
+    'https://github.com/Ankit-jailwal/ankitjailwal.com',
   ];
 
   List<Widget> generateImageTiles(screenSize) {
@@ -81,16 +92,48 @@ class _DestinationCarouselState extends State<DestinationCarousel> {
         ),
         AspectRatio(
           aspectRatio: 18 / 8,
-          child: Center(
-            child: Text(
-              places[_current],
-              style: TextStyle(
-                letterSpacing: 8,
-                fontFamily: 'Electrolize',
-                fontSize: screenSize.width / 25,
-                color: Colors.white,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Center(
+                child: Text(
+                  places[_current],
+                  style: TextStyle(
+                    letterSpacing: 8,
+                    fontFamily: 'Electrolize',
+                    fontSize: screenSize.width / 25,
+                    color: Colors.white,
+                  ),
+                ),
               ),
-            ),
+              FlatButton(
+                onPressed: () {
+                  launchInBrowser(project_link[_current]);
+                },
+                child: Container(
+                  height: 32,
+                  width: 140,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(5),
+                    color: Theme.of(context).bottomAppBarColor,
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      FaIcon(
+                        FontAwesomeIcons.github,
+                        color: Colors.blueGrey[100],
+                      ),
+                      Text(
+                        "View Project",
+                        style: TextStyle(color: Colors.blueGrey[100]),
+                      )
+                    ],
+                  ),
+                ),
+              )
+            ],
           ),
         ),
         ResponsiveWidget.isSmallScreen(context)

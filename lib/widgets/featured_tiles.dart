@@ -10,12 +10,12 @@ class FeaturedTiles extends StatelessWidget {
   final Size screenSize;
 
   final List<String> assets = [
-    'assets/images/trekking.jpg',
-    'assets/images/animals.jpg',
-    'assets/images/photography.jpeg',
+    'assets/images/hyd.jpg',
+    'assets/images/hb.png',
+    'assets/images/hacsac.jpg',
   ];
-
-  final List<String> title = ['Trekking', 'Animals', 'Photography'];
+  final List<String> position = ['Winner', 'Runner up', 'Third Place'];
+  final List<String> title = ['SS2020 Mobile \nDevelopment Contest', 'HackBattle2020\n', 'HAC SAC 1.0\n'];
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +32,7 @@ class FeaturedTiles extends StatelessWidget {
                     (int pageIndex) => Row(
                       children: [
                         Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             SizedBox(
                               height: screenSize.width / 2.5,
@@ -49,17 +49,34 @@ class FeaturedTiles extends StatelessWidget {
                               padding: EdgeInsets.only(
                                 top: screenSize.height / 70,
                               ),
-                              child: Text(
-                                title[pageIndex],
-                                style: TextStyle(
-                                  fontSize: 16,
-                                  fontFamily: 'Montserrat',
-                                  fontWeight: FontWeight.w500,
-                                  color: Theme.of(context)
-                                      .primaryTextTheme
-                                      .subtitle1
-                                      .color,
-                                ),
+                              child: Column(
+                                children: [
+                                  Text(
+                                    position[pageIndex],
+                                    style: TextStyle(
+                                      fontSize: 16,
+                                      fontFamily: 'Montserrat',
+                                      fontWeight: FontWeight.w500,
+                                      color: Theme.of(context)
+                                          .primaryTextTheme
+                                          .subtitle1
+                                          .color,
+                                    ),
+                                  ),
+                                  Text(
+                                    title[pageIndex],
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(
+                                      fontSize: 16,
+                                      fontFamily: 'Montserrat',
+                                      fontWeight: FontWeight.w500,
+                                      color: Theme.of(context)
+                                          .primaryTextTheme
+                                          .subtitle1
+                                          .color,
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
                           ],
@@ -99,17 +116,34 @@ class FeaturedTiles extends StatelessWidget {
                         padding: EdgeInsets.only(
                           top: screenSize.height / 70,
                         ),
-                        child: Text(
-                          title[pageIndex],
-                          style: TextStyle(
-                            fontSize: 16,
-                            fontFamily: 'Montserrat',
-                            fontWeight: FontWeight.w500,
-                            color: Theme.of(context)
-                                .primaryTextTheme
-                                .subtitle1
-                                .color,
-                          ),
+                        child: Column(
+                          children: [
+                            Text(
+                              position[pageIndex],
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontFamily: 'Montserrat',
+                                fontWeight: FontWeight.w500,
+                                color: Theme.of(context)
+                                    .primaryTextTheme
+                                    .subtitle1
+                                    .color,
+                              ),
+                            ),
+                            Text(
+                              title[pageIndex],
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontFamily: 'Montserrat',
+                                fontWeight: FontWeight.w500,
+                                color: Theme.of(context)
+                                    .primaryTextTheme
+                                    .subtitle1
+                                    .color,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ],

@@ -67,14 +67,6 @@ class _TopBarContentsState extends State<TopBarContents> {
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Text(
-                            'Discover',
-                            style: TextStyle(
-                              color: _isHovering[0]
-                                  ? Colors.blue[200]
-                                  : Colors.white,
-                            ),
-                          ),
                           SizedBox(height: 5),
                           Visibility(
                             maintainAnimation: true,
@@ -103,14 +95,6 @@ class _TopBarContentsState extends State<TopBarContents> {
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Text(
-                            'Contact Us',
-                            style: TextStyle(
-                              color: _isHovering[1]
-                                  ? Colors.blue[200]
-                                  : Colors.white,
-                            ),
-                          ),
                           SizedBox(height: 5),
                           Visibility(
                             maintainAnimation: true,

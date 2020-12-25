@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-Future<void> _launchInBrowser(String url) async {
+Future<void> launchInBrowser(String url) async {
   if (await canLaunch(url)) {
     await launch(
       url,
@@ -101,7 +101,7 @@ class BottomBar extends StatelessWidget {
                 SizedBox(height: 5),
                 FlatButton(
                   onPressed: (){
-                    _launchInBrowser(add);
+                    launchInBrowser(add);
                   },
                   child: InfoText(
                     type: 'Address',
@@ -147,7 +147,7 @@ class BottomBar extends StatelessWidget {
                             color: Colors.blueGrey[100],
                             iconSize: 30,
                             onPressed: () {
-                              _launchInBrowser(fb);
+                              launchInBrowser(fb);
                             }),
                         IconButton(
                           // Use the FaIcon Widget + FontAwesomeIcons class for the IconData
@@ -155,7 +155,7 @@ class BottomBar extends StatelessWidget {
                             color: Colors.blueGrey[100],
                             iconSize: 30,
                             onPressed: () {
-                              _launchInBrowser(insta);
+                              launchInBrowser(insta);
                             }),
                         IconButton(
                           // Use the FaIcon Widget + FontAwesomeIcons class for the IconData
@@ -163,7 +163,7 @@ class BottomBar extends StatelessWidget {
                             iconSize: 30,
                             color: Colors.blueGrey[100],
                             onPressed: () {
-                              _launchInBrowser(git);
+                              launchInBrowser(git);
                             }),
                         IconButton(
                           // Use the FaIcon Widget + FontAwesomeIcons class for the IconData
@@ -171,7 +171,7 @@ class BottomBar extends StatelessWidget {
                             color: Colors.blueGrey[100],
                             iconSize: 30,
                             onPressed: () {
-                              _launchInBrowser(lin);
+                              launchInBrowser(lin);
                             }),
                       ],
                     ),
@@ -201,7 +201,7 @@ class BottomBar extends StatelessWidget {
                     SizedBox(height: 5),
                     FlatButton(
                       onPressed: (){
-                        _launchInBrowser(add);
+                          launchInBrowser(add);
                       },
                       child: InfoText(
                         type: 'Address',

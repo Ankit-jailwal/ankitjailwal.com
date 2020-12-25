@@ -24,16 +24,16 @@ class FeaturedHeading extends StatelessWidget {
               children: [
                 Row(),
                 Text(
-                  'Featured',
+                  'RECENT AWARDS',
                   style: TextStyle(
                     fontSize: 24,
                     fontFamily: 'Montserrat',
-                    fontWeight: FontWeight.bold,
+                    fontWeight: FontWeight.w600,
                   ),
                 ),
                 SizedBox(height: 5),
                 Text(
-                  'Unique wildlife tours & destinations',
+                  'It always seems impossible until it\u0027s done',
                   textAlign: TextAlign.end,
                   style: Theme.of(context).primaryTextTheme.subtitle1,
                 ),
@@ -45,16 +45,16 @@ class FeaturedHeading extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Text(
-                  'Featured',
+                  'RECENT AWARDS',
                   style: TextStyle(
                     fontSize: 40,
                     fontFamily: 'Montserrat',
-                    fontWeight: FontWeight.bold,
+                    fontWeight: FontWeight.w600,
                   ),
                 ),
                 Expanded(
                   child: Text(
-                    'Unique wildlife tours & destinations',
+                    "It always seems impossible until it\u0027s done",
                     textAlign: TextAlign.end,
                     style: Theme.of(context).primaryTextTheme.subtitle1,
                   ),
