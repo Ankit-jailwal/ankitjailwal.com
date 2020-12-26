@@ -14,18 +14,18 @@ class DestinationHeading extends StatelessWidget {
     return ResponsiveWidget.isSmallScreen(context)
         ? Container(
             padding: EdgeInsets.only(
-              top: screenSize.height / 20,
-              bottom: screenSize.height / 20,
+              top: screenSize.height / 22,
+              bottom: screenSize.height / 22,
             ),
             width: screenSize.width,
             // color: Colors.black,
             child: Text(
-              'Recent Projects',
+              'RECENT PROJECTS',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 24,
                 fontFamily: 'Montserrat',
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w600,
               ),
             ),
           )
@@ -37,12 +37,12 @@ class DestinationHeading extends StatelessWidget {
             width: screenSize.width,
             // color: Colors.black,
             child: Text(
-              'Recent Projects',
+              'RECENT PROJECTS',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 40,
                 fontFamily: 'Montserrat',
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w600,
               ),
             ),
           );

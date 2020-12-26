@@ -1,5 +1,6 @@
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:dynamic_theme/dynamic_theme.dart';
+import 'package:explore/widgets/about_heading.dart';
 import 'package:explore/widgets/web_scrollbar.dart';
 import 'package:explore/widgets/bottom_bar.dart';
 import 'package:explore/widgets/carousel.dart';
@@ -11,6 +12,7 @@ import 'package:explore/widgets/floating_quick_access_bar.dart';
 import 'package:explore/widgets/responsive.dart';
 import 'package:explore/widgets/top_bar_contents.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class HomePage extends StatefulWidget {
   static const String route = '/';
@@ -71,20 +73,20 @@ class _HomePageState extends State<HomePage> {
         },
         items: <BottomNavyBarItem>[
           BottomNavyBarItem(
-              title: Text('Item One'),
-              icon: Icon(Icons.home)
+              title: Text('About me'),
+              icon: Icon(Icons.account_box_rounded)
           ),
           BottomNavyBarItem(
-              title: Text('Item Two'),
-              icon: Icon(Icons.apps)
+              title: Text('Awards'),
+              icon: FaIcon(FontAwesomeIcons.award)
           ),
           BottomNavyBarItem(
-              title: Text('Item Three'),
-              icon: Icon(Icons.chat_bubble)
+              title: Text('Projects'),
+              icon: FaIcon(FontAwesomeIcons.tools)
           ),
           BottomNavyBarItem(
-              title: Text('Item Four'),
-              icon: Icon(Icons.settings)
+              title: Text('Contact me'),
+              icon: Icon(Icons.mail)
           ),
         ],
       ):null,
@@ -173,6 +175,8 @@ class _HomePageState extends State<HomePage> {
                       Container(
                         child: Column(
                           children: [
+                            AboutHeading(screenSize: screenSize,
+                            ),
                             FeaturedHeading(
                               screenSize: screenSize,
                             ),

@@ -22,6 +22,7 @@ String git='https://github.com/Ankit-jailwal';
 String lin='https://www.linkedin.com/in/ankit-jailwal-776712173/';
 String fb='https://www.facebook.com/ankit.jailwal.52/';
 String insta='https://www.instagram.com/ankitjailwal/';
+String discord='https://discord.com/channels/Ankitjailwal#4131';
 String add='https://bit.ly/3plqJad';
 
 class BottomBar extends StatelessWidget {
@@ -39,7 +40,7 @@ class BottomBar extends StatelessWidget {
               children: [
                 Center(
                   child: Text(
-                    'Social media:',
+                    'Follow me on:',
                     style: TextStyle(
                       color: Colors.blueGrey[300],
                       fontSize: 16,
@@ -131,7 +132,7 @@ class BottomBar extends StatelessWidget {
                   children: [
                     Center(
                       child: Text(
-                        'Social media:',
+                        'Follow me on:',
                         style: TextStyle(
                           color: Colors.blueGrey[300],
                           fontSize: 16,
@@ -172,6 +173,14 @@ class BottomBar extends StatelessWidget {
                             iconSize: 30,
                             onPressed: () {
                               launchInBrowser(lin);
+                            }),
+                        IconButton(
+                          // Use the FaIcon Widget + FontAwesomeIcons class for the IconData
+                            icon: FaIcon(FontAwesomeIcons.discord),
+                            color: Colors.blueGrey[100],
+                            iconSize: 30,
+                            onPressed: () {
+                              launchInBrowser(discord);
                             }),
                       ],
                     ),
