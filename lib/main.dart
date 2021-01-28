@@ -1,5 +1,4 @@
 import 'package:dynamic_theme/dynamic_theme.dart';
-import 'package:explore/utils/authentication.dart';
 import 'package:flutter/material.dart';
 
 import 'screens/home_page.dart';
@@ -14,17 +13,6 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  Future getUserInfo() async {
-    await getUser();
-    setState(() {});
-    print(uid);
-  }
-
-  @override
-  void initState() {
-    getUserInfo();
-    super.initState();
-  }
 
   @override
   Widget build(BuildContext context) {

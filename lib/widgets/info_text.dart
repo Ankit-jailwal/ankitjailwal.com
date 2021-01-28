@@ -16,7 +16,6 @@ class InfoText extends StatelessWidget {
         Center(
           child: Text(
             '$type:',
-
             style: TextStyle(
               color: Colors.blueGrey[300],
               fontSize: 16,
@@ -24,13 +23,11 @@ class InfoText extends StatelessWidget {
           ),
         ),
         Center(
-          child: Flexible(
-            child: Text(
-              text,
-              style: TextStyle(
-                color: Colors.blueGrey[100],
-                fontSize: 16,
-              ),
+          child: Text(
+            text,
+            style: TextStyle(
+              color: Colors.blueGrey[100],
+              fontSize: 16,
             ),
           ),
         )

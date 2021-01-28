@@ -15,7 +15,44 @@ class FeaturedTiles extends StatelessWidget {
     'assets/images/hacsac.jpg',
   ];
   final List<String> position = ['Winner', 'Runner up', 'Third Place'];
-  final List<String> title = ['SS2020 Mobile \nDevelopment Contest', 'HackBattle2020\n', 'HAC SAC 1.0\n'];
+  final List<String> title = [
+    'SS2020 Mobile \nDevelopment Contest',
+    'HackBattle2020\n',
+    'HAC SAC 1.0\n'
+  ];
+
+  final List<String> assets0 = [
+    'assets/images/hyd.jpg',
+    'assets/images/hb.png',
+    'assets/images/hacsac.jpg',
+    'assets/images/avoid.jpg',
+    'assets/images/cadmics.jpg',
+    'assets/images/sumo.jpg',
+  ];
+  final List<String> position0 = [
+    'Winner',
+    'Runner up',
+    'Third Place',
+    'Third Place',
+    'Runner up',
+    'Third Place'
+  ];
+  final List<String> title0 = [
+    'SS2020 Mobile \nDevelopment Contest',
+    'HackBattle2020\n',
+    'HAC SAC 1.0\n',
+    'Avoid It',
+    'Cadmics\n',
+    'Robo Sumo\n'
+  ];
+
+  final List<String> assets1 = [
+    'assets/images/avoid.jpg',
+    'assets/images/cadmics.jpg',
+    'assets/images/sumo.jpg',
+  ];
+  final List<String> position1 = ['Third Place', 'Runner up', 'Third Place'];
+  final List<String> title1 = ['Avoid It', 'Cadmics\n', 'Robo Sumo\n'];
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +65,7 @@ class FeaturedTiles extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   SizedBox(width: screenSize.width / 15),
-                  ...Iterable<int>.generate(assets.length).map(
+                  ...Iterable<int>.generate(assets0.length).map(
                     (int pageIndex) => Row(
                       children: [
                         Column(
@@ -40,7 +77,7 @@ class FeaturedTiles extends StatelessWidget {
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(5.0),
                                 child: Image.asset(
-                                  assets[pageIndex],
+                                  assets0[pageIndex],
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -52,7 +89,7 @@ class FeaturedTiles extends StatelessWidget {
                               child: Column(
                                 children: [
                                   Text(
-                                    position[pageIndex],
+                                    position0[pageIndex],
                                     style: TextStyle(
                                       fontSize: 16,
                                       fontFamily: 'Montserrat',
@@ -64,7 +101,7 @@ class FeaturedTiles extends StatelessWidget {
                                     ),
                                   ),
                                   Text(
-                                    title[pageIndex],
+                                    title0[pageIndex],
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                       fontSize: 16,
@@ -89,68 +126,135 @@ class FeaturedTiles extends StatelessWidget {
               ),
             ),
           )
-        : Padding(
-            padding: EdgeInsets.only(
-              top: screenSize.height * 0.06,
-              left: screenSize.width / 15,
-              right: screenSize.width / 15,
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                ...Iterable<int>.generate(assets.length).map(
-                  (int pageIndex) => Column(
-                    children: [
-                      SizedBox(
-                        height: screenSize.width / 6,
-                        width: screenSize.width / 3.8,
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(5.0),
-                          child: Image.asset(
-                            assets[pageIndex],
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsets.only(
-                          top: screenSize.height / 70,
-                        ),
-                        child: Column(
-                          children: [
-                            Text(
-                              position[pageIndex],
-                              style: TextStyle(
-                                fontSize: 16,
-                                fontFamily: 'Montserrat',
-                                fontWeight: FontWeight.w500,
-                                color: Theme.of(context)
-                                    .primaryTextTheme
-                                    .subtitle1
-                                    .color,
-                              ),
-                            ),
-                            Text(
-                              title[pageIndex],
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontSize: 16,
-                                fontFamily: 'Montserrat',
-                                fontWeight: FontWeight.w500,
-                                color: Theme.of(context)
-                                    .primaryTextTheme
-                                    .subtitle1
-                                    .color,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
+        : Column(
+            children: [
+              Padding(
+                padding: EdgeInsets.only(
+                  top: screenSize.height * 0.06,
+                  left: screenSize.width / 15,
+                  right: screenSize.width / 15,
                 ),
-              ],
-            ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    ...Iterable<int>.generate(assets.length).map(
+                      (int pageIndex) => Column(
+                        children: [
+                          SizedBox(
+                            height: screenSize.width / 6,
+                            width: screenSize.width / 3.8,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(5.0),
+                              child: Image.asset(
+                                assets[pageIndex],
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(
+                              top: screenSize.height / 70,
+                            ),
+                            child: Column(
+                              children: [
+                                Text(
+                                  position[pageIndex],
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    fontFamily: 'Montserrat',
+                                    fontWeight: FontWeight.w500,
+                                    color: Theme.of(context)
+                                        .primaryTextTheme
+                                        .subtitle1
+                                        .color,
+                                  ),
+                                ),
+                                Text(
+                                  title[pageIndex],
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    fontFamily: 'Montserrat',
+                                    fontWeight: FontWeight.w500,
+                                    color: Theme.of(context)
+                                        .primaryTextTheme
+                                        .subtitle1
+                                        .color,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(
+                  top: screenSize.height * 0.06,
+                  left: screenSize.width / 15,
+                  right: screenSize.width / 15,
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    ...Iterable<int>.generate(assets.length).map(
+                      (int pageIndex) => Column(
+                        children: [
+                          SizedBox(
+                            height: screenSize.width / 6,
+                            width: screenSize.width / 3.8,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(5.0),
+                              child: Image.asset(
+                                assets1[pageIndex],
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(
+                              top: screenSize.height / 70,
+                            ),
+                            child: Column(
+                              children: [
+                                Text(
+                                  position1[pageIndex],
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    fontFamily: 'Montserrat',
+                                    fontWeight: FontWeight.w500,
+                                    color: Theme.of(context)
+                                        .primaryTextTheme
+                                        .subtitle1
+                                        .color,
+                                  ),
+                                ),
+                                Text(
+                                  title1[pageIndex],
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    fontFamily: 'Montserrat',
+                                    fontWeight: FontWeight.w500,
+                                    color: Theme.of(context)
+                                        .primaryTextTheme
+                                        .subtitle1
+                                        .color,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              )
+            ],
           );
   }
 }

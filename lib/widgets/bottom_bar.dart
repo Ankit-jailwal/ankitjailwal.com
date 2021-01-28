@@ -24,6 +24,7 @@ String fb='https://www.facebook.com/ankit.jailwal.52/';
 String insta='https://www.instagram.com/ankitjailwal/';
 String discord='https://discord.com/channels/Ankitjailwal#4131';
 String add='https://bit.ly/3plqJad';
+String xbox='https://account.xbox.com/en-in/Profile?xr=mebarnav&rtc=1';
 
 class BottomBar extends StatelessWidget {
   const BottomBar({
@@ -35,98 +36,7 @@ class BottomBar extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(30),
       color: Theme.of(context).bottomAppBarColor,
-      child: ResponsiveWidget.isSmallScreen(context)
-          ? Column(
-              children: [
-                Center(
-                  child: Text(
-                    'Follow me on:',
-                    style: TextStyle(
-                      color: Colors.blueGrey[300],
-                      fontSize: 16,
-                    ),
-                  ),
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    IconButton(
-                      // Use the FaIcon Widget + FontAwesomeIcons class for the IconData
-                        icon: FaIcon(FontAwesomeIcons.facebook),
-                        color: Colors.blueGrey[100],
-                        iconSize: 30,
-                        onPressed: () {
-                          print("Pressed");
-                        }),
-                    IconButton(
-                      // Use the FaIcon Widget + FontAwesomeIcons class for the IconData
-                        icon: FaIcon(FontAwesomeIcons.instagram),
-                        color: Colors.blueGrey[100],
-                        iconSize: 30,
-                        onPressed: () {
-                          print("Pressed");
-                        }),
-                    IconButton(
-                      // Use the FaIcon Widget + FontAwesomeIcons class for the IconData
-                        icon: FaIcon(FontAwesomeIcons.github),
-                        iconSize: 30,
-                        color: Colors.blueGrey[100],
-                        onPressed: () {
-                          print("Pressed");
-                        }),
-                    IconButton(
-                      // Use the FaIcon Widget + FontAwesomeIcons class for the IconData
-                        icon: FaIcon(FontAwesomeIcons.linkedin),
-                        color: Colors.blueGrey[100],
-                        iconSize: 30,
-                        onPressed: () {
-                          print("Pressed");
-                        }),
-                  ],
-                ),
-                Container(
-                  color: Colors.blueGrey,
-                  width: double.maxFinite,
-                  height: 1,
-                ),
-                SizedBox(height: 20),
-                FlatButton(
-                  onPressed: (){
-                    launch("mailto:jailwalankit@gmail.com");
-                  },
-                  child: InfoText(
-                    type: 'Email',
-                    text: 'jailwalankit@gmail.com',
-                  ),
-                ),
-                SizedBox(height: 5),
-                FlatButton(
-                  onPressed: (){
-                    launchInBrowser(add);
-                  },
-                  child: InfoText(
-                    type: 'Address',
-                    text:
-                    'Air force 1 Jamnagar, Jamnagar, Gujarat, India 361003',
-                  ),
-                ),
-                SizedBox(height: 20),
-                Container(
-                  color: Colors.blueGrey,
-                  width: double.maxFinite,
-                  height: 1,
-                ),
-                SizedBox(height: 20),
-                Text(
-                  'Copyright © 2020 | ANKITJAILWAL',
-                  style: TextStyle(
-                    color: Colors.blueGrey[300],
-                    fontSize: 14,
-                  ),
-                ),
-              ],
-            )
-          : Column(
+      child:  Column(
               children: [
                 Column(
                   children: [
@@ -181,6 +91,14 @@ class BottomBar extends StatelessWidget {
                             iconSize: 30,
                             onPressed: () {
                               launchInBrowser(discord);
+                            }),
+                        IconButton(
+                          // Use the FaIcon Widget + FontAwesomeIcons class for the IconData
+                            icon: FaIcon(FontAwesomeIcons.xbox),
+                            color: Colors.blueGrey[100],
+                            iconSize: 30,
+                            onPressed: () {
+                              launchInBrowser(xbox);
                             }),
                       ],
                     ),

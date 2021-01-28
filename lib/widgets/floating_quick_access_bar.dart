@@ -17,7 +17,7 @@ class _FloatingQuickAccessBarState extends State<FloatingQuickAccessBar> {
   List _isHovering = [false, false, false, false];
   List<Widget> rowElements = [];
 
-  List<String> items = ['About me', 'Awards', 'Projects', 'Contact me'];
+  List<String> items = ['About me', 'Skills', 'Awards', 'Projects'];
 
   List<Widget> generateRowElements() {
     rowElements.clear();
