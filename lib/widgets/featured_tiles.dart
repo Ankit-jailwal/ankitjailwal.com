@@ -1,4 +1,4 @@
-import 'package:explore/widgets/responsive.dart';
+import 'package:ankitjailwal/widgets/responsive.dart';
 import 'package:flutter/material.dart';
 
 class FeaturedTiles extends StatelessWidget {
@@ -75,7 +75,7 @@ class FeaturedTiles extends StatelessWidget {
                               height: screenSize.width / 2.5,
                               width: screenSize.width / 1.5,
                               child: ClipRRect(
-                                borderRadius: BorderRadius.circular(5.0),
+                                //borderRadius: BorderRadius.circular(5.0),
                                 child: Image.asset(
                                   assets0[pageIndex],
                                   fit: BoxFit.cover,
@@ -144,7 +144,7 @@ class FeaturedTiles extends StatelessWidget {
                             height: screenSize.width / 6,
                             width: screenSize.width / 3.8,
                             child: ClipRRect(
-                              borderRadius: BorderRadius.circular(5.0),
+                            //  borderRadius: BorderRadius.circular(5.0),
                               child: Image.asset(
                                 assets[pageIndex],
                                 fit: BoxFit.cover,
@@ -207,7 +207,7 @@ class FeaturedTiles extends StatelessWidget {
                             height: screenSize.width / 6,
                             width: screenSize.width / 3.8,
                             child: ClipRRect(
-                              borderRadius: BorderRadius.circular(5.0),
+                              //borderRadius: BorderRadius.circular(5.0),
                               child: Image.asset(
                                 assets1[pageIndex],
                                 fit: BoxFit.cover,

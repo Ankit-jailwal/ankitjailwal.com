@@ -1,10 +1,10 @@
 import 'dart:io';
 
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:explore/config/constants.dart';
-import 'package:explore/widgets/auth_dialog.dart';
-import 'package:explore/widgets/bottom_bar.dart';
-import 'package:explore/widgets/responsive.dart';
+import 'package:ankitjailwal/config/constants.dart';
+import 'package:ankitjailwal/widgets/auth_dialog.dart';
+import 'package:ankitjailwal/widgets/bottom_bar.dart';
+import 'package:ankitjailwal/widgets/responsive.dart';
 import 'package:ext_storage/ext_storage.dart';
 import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
@@ -154,7 +154,7 @@ class _AboutHeadingState extends State<AboutHeading> {
                           child: Center(
                             child: Padding(
                               padding: const EdgeInsets.only(top:20),
-                              child: FlareActor("assets/rive/Human.flr", alignment:Alignment.center, fit:BoxFit.cover, animation:"Build and Fade Out",sizeFromArtboard: true,),
+                              child: FlareActor("assets/rive/Human.flr",antialias: false, alignment:Alignment.center, fit:BoxFit.cover, animation:"Build and Fade Out",sizeFromArtboard: true,),
                             ),
                           ),),
                       ],
@@ -187,7 +187,7 @@ class _AboutHeadingState extends State<AboutHeading> {
                               children: [
                                 CircleAvatar(
                                     radius: widget.screenSize.width/10,
-                                    child: Image.asset("assets/images/person.png",fit: BoxFit.fill,)),
+                                    child: Image.asset("assets/images/cir.png",fit: BoxFit.fill,)),
                                 Column(
                                   //mainAxisSize: MainAxisSize.min,
                                   //crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -224,38 +224,38 @@ class _AboutHeadingState extends State<AboutHeading> {
                                           ],
                                         ),
                                         SizedBox(height: 15,),
-                                        Padding(
-                                          padding: EdgeInsets.only(right: 20),
-                                          child: FlatButton(
-                                            onPressed: () {
-                                             launchInBrowser('https://drive.google.com/u/0/uc?id=1nluFMNV3yAn-esroZ7e9Ayyf-3Jq1rXO&export=download');
-                                            },
-                                            child: Container(
-                                              height: 35,
-                                              width: 130,
-                                              decoration: BoxDecoration(
-                                                borderRadius: BorderRadius.circular(5),
-                                                boxShadow: [
-                                                  BoxShadow(
-                                                    color:Colors.black45,
-                                                    blurRadius: 10.0,
-                                                    offset: Offset(0, 2),
-                                                  ),
-                                                ],
-                                                color: Theme.of(context).scaffoldBackgroundColor,
-                                              ),
-                                              child: Row(
-                                                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                                children: [
-                                                  FaIcon(FontAwesomeIcons.download,size: 20,),
-                                                  Text(
-                                                      "Download CV"
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
-                                          ),
-                                        )
+                                       // Padding(
+                                       //   padding: EdgeInsets.only(right: 20),
+                                       //   child: FlatButton(
+                                       //     onPressed: () {
+                                       //      //launchInBrowser('https://drive.google.com/u/0/uc?id=1nluFMNV3yAn-esroZ7e9Ayyf-3Jq1rXO&export=download');
+                                       //     },
+                                       //     child: Container(
+                                       //       height: 35,
+                                       //       width: 130,
+                                       //       decoration: BoxDecoration(
+                                       //         borderRadius: BorderRadius.circular(5),
+                                       //         boxShadow: [
+                                       //           BoxShadow(
+                                       //             color:Colors.black45,
+                                       //             blurRadius: 10.0,
+                                       //             offset: Offset(0, 2),
+                                       //           ),
+                                       //         ],
+                                       //         color: Theme.of(context).scaffoldBackgroundColor,
+                                       //       ),
+                                       //       child: Row(
+                                       //         mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                       //         children: [
+                                       //           FaIcon(FontAwesomeIcons.download,size: 20,),
+                                       //           Text(
+                                       //               "Download CV"
+                                       //           ),
+                                       //         ],
+                                       //       ),
+                                       //     ),
+                                       //   ),
+                                       // )
                                       ],
                                     ),
                                   ],
@@ -303,38 +303,38 @@ class _AboutHeadingState extends State<AboutHeading> {
                                               ),
                                             ],
                                           ),
-                                          Padding(
-                                            padding: EdgeInsets.only(right: 20),
-                                            child: FlatButton(
-                                              onPressed: (){
-                                                launchInBrowser('https://drive.google.com/u/0/uc?id=1nluFMNV3yAn-esroZ7e9Ayyf-3Jq1rXO&export=download');
-                                              },
-                                              child: Container(
-                                                height: 35,
-                                                width: 130,
-                                                decoration: BoxDecoration(
-                                                  borderRadius: BorderRadius.circular(5),
-                                                  boxShadow: [
-                                                    BoxShadow(
-                                                      color:Colors.black45,
-                                                      blurRadius: 10.0,
-                                                      offset: Offset(0, 2),
-                                                    ),
-                                                  ],
-                                                  color: Theme.of(context).scaffoldBackgroundColor,
-                                                ),
-                                                child: Row(
-                                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                                  children: [
-                                                    FaIcon(FontAwesomeIcons.download,size: 20,),
-                                                    Text(
-                                                        "Download CV"
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
-                                            ),
-                                          )
+                                          //Padding(
+                                          //  padding: EdgeInsets.only(right: 20),
+                                          //  child: FlatButton(
+                                          //    onPressed: (){
+                                          //      launchInBrowser('https://drive.google.com/u/0/uc?id=1nluFMNV3yAn-esroZ7e9Ayyf-3Jq1rXO&export=download');
+                                          //    },
+                                          //    child: Container(
+                                          //      height: 35,
+                                          //      width: 130,
+                                          //      decoration: BoxDecoration(
+                                          //        borderRadius: BorderRadius.circular(5),
+                                          //        boxShadow: [
+                                          //          BoxShadow(
+                                          //            color:Colors.black45,
+                                          //            blurRadius: 10.0,
+                                          //            offset: Offset(0, 2),
+                                          //          ),
+                                          //        ],
+                                          //        color: Theme.of(context).scaffoldBackgroundColor,
+                                          //      ),
+                                          //      child: Row(
+                                          //        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                          //        children: [
+                                          //          FaIcon(FontAwesomeIcons.download,size: 20,),
+                                          //          Text(
+                                          //              "Download CV"
+                                          //          ),
+                                          //        ],
+                                          //      ),
+                                          //    ),
+                                          //  ),
+                                          //)
                                         ],
                                       ),
                                     ],
@@ -342,7 +342,7 @@ class _AboutHeadingState extends State<AboutHeading> {
                                 ),
                                 CircleAvatar(
                                     radius: widget.screenSize.width/14,
-                                    child: Image.asset("assets/images/person.png",fit: BoxFit.fill,)),
+                                    child: Image.asset("assets/images/cir.png",fit: BoxFit.fill,)),
                               ],
                             ),
 

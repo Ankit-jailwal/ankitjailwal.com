@@ -1,6 +1,6 @@
-import 'package:explore/widgets/bottom_bar_column.dart';
-import 'package:explore/widgets/info_text.dart';
-import 'package:explore/widgets/responsive.dart';
+import 'package:ankitjailwal/widgets/bottom_bar_column.dart';
+import 'package:ankitjailwal/widgets/info_text.dart';
+import 'package:ankitjailwal/widgets/responsive.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -23,7 +23,7 @@ String lin='https://www.linkedin.com/in/ankit-jailwal-776712173/';
 String fb='https://www.facebook.com/ankit.jailwal.52/';
 String insta='https://www.instagram.com/ankitjailwal/';
 String discord='https://discord.com/channels/Ankitjailwal#4131';
-String add='https://bit.ly/3plqJad';
+String add='https://www.google.com/maps/place/DIT+University/@30.3983031,78.0751177,15z/data=!4m5!3m4!1s0x0:0x359bb8f9c7797984!8m2!3d30.3983031!4d78.0751177';
 String xbox='https://account.xbox.com/en-in/Profile?xr=mebarnav&rtc=1';
 
 class BottomBar extends StatelessWidget {
@@ -133,7 +133,7 @@ class BottomBar extends StatelessWidget {
                       child: InfoText(
                         type: 'Address',
                         text:
-                            'Air force 1 Jamnagar, Jamnagar, Gujarat, India 361003',
+                            'DIT University, Uttrakhand, India 248009',
                       ),
                     )
                   ],

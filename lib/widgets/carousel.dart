@@ -1,8 +1,8 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:explore/widgets/responsive.dart';
+import 'package:ankitjailwal/widgets/responsive.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:explore/widgets/bottom_bar.dart';
+import 'package:ankitjailwal/widgets/bottom_bar.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class DestinationCarousel extends StatefulWidget {
@@ -77,12 +77,12 @@ class _DestinationCarouselState extends State<DestinationCarousel> {
   ];
 
   final List<String> project_link = [
-    'https://github.com/Ankit-jailwal/ankitjailwal.com',
-    'https://github.com/Ankit-jailwal/ankitjailwal.com',
-    'https://github.com/Ankit-jailwal/ankitjailwal.com',
-    'https://github.com/Ankit-jailwal/ankitjailwal.com',
-    'https://github.com/Ankit-jailwal/ankitjailwal.com',
-    'https://github.com/Ankit-jailwal/ankitjailwal.com',
+    'https://github.com/Ankit-jailwal/FTX-Razorpay_APP',
+    null,
+    'https://github.com/Ankit-jailwal/Blogx',
+    'https://github.com/Ankit-jailwal/Wireless_gaming_simulator',
+    null,
+    null,
   ];
 
   List<Widget> generateImageTiles(screenSize) {
@@ -102,7 +102,8 @@ class _DestinationCarouselState extends State<DestinationCarousel> {
               Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  FlatButton(
+                  project_link[_current]==null?Container(height: 32,
+                    width: 140,):FlatButton(
                     onPressed: () {
                       launchInBrowser(project_link[_current]);
                     },

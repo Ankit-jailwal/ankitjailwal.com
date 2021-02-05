@@ -1,4 +1,4 @@
-import 'package:explore/widgets/responsive.dart';
+import 'package:ankitjailwal/widgets/responsive.dart';
 import 'package:flutter/material.dart';
 
 class FeaturedHeading extends StatelessWidget {
