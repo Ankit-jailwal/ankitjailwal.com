@@ -1,17 +1,9 @@
-import 'dart:io';
-
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:ankitjailwal/config/constants.dart';
 import 'package:ankitjailwal/widgets/auth_dialog.dart';
-import 'package:ankitjailwal/widgets/bottom_bar.dart';
 import 'package:ankitjailwal/widgets/responsive.dart';
-import 'package:ext_storage/ext_storage.dart';
 import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:permission_handler/permission_handler.dart';
-import 'package:toast/toast.dart';
 
 
 class AboutHeading extends StatefulWidget {
@@ -41,7 +33,7 @@ class _AboutHeadingState extends State<AboutHeading> {
               ResponsiveWidget.isSmallScreen(context)?skills_small[_current]:skills[_current],
               textAlign: TextAlign.center,
               style: TextStyle(
-                letterSpacing: 8,
+                letterSpacing: 6,
                 //fontFamily: 'Electrolize',
                 fontSize: screenSize.width / 40,
               ),
@@ -51,8 +43,9 @@ class _AboutHeadingState extends State<AboutHeading> {
             borderRadius: BorderRadius.circular(8.0),
             child: Image.asset(
               element,
+              width: screenSize.width/2.8,
               height: 180,
-              fit: BoxFit.cover,
+              fit: BoxFit.contain,
             ),
           ),
         ],
