@@ -45,7 +45,7 @@ class _AuthDialogState extends State<AuthDialog> {
                 Center(child: Text("jailwalankit@gmail.com",style: TextStyle(fontSize: 14,fontWeight: FontWeight.w600,color:Theme.of(context).brightness == Brightness.dark?Colors.white70:Colors.black87),)),
                 Center(child: Text("+91 87089 17205",style: TextStyle(fontSize: 14,fontWeight: FontWeight.w600,color:Theme.of(context).brightness == Brightness.dark?Colors.white70:Colors.black87),)),
                 SizedBox(height: 15),
-                Center(child: Text("Scan if you love BIRYANI",style: TextStyle(fontSize: 16,fontWeight: FontWeight.w600,color:Theme.of(context).brightness == Brightness.dark?Colors.white70:Colors.black87),)),
+                Center(child: Text("Scan if you love BIRYANIss",style: TextStyle(fontSize: 16,fontWeight: FontWeight.w600,color:Theme.of(context).brightness == Brightness.dark?Colors.white70:Colors.black87),)),
                 SizedBox(height: 5),
                 Padding(
                   padding: const EdgeInsets.only(
