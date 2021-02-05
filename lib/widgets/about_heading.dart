@@ -1,7 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:ankitjailwal/config/constants.dart';
-import 'package:ankitjailwal/widgets/auth_dialog.dart';
-import 'package:ankitjailwal/widgets/responsive.dart';
+import 'package:explore/config/constants.dart';
+import 'package:explore/widgets/auth_dialog.dart';
+import 'package:explore/widgets/responsive.dart';
 import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
 

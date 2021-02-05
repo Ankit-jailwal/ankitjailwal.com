@@ -1,15 +1,15 @@
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:dynamic_theme/dynamic_theme.dart';
-import 'package:ankitjailwal/widgets/about_heading.dart';
-import 'package:ankitjailwal/widgets/auth_dialog.dart';
-import 'package:ankitjailwal/widgets/web_scrollbar.dart';
-import 'package:ankitjailwal/widgets/bottom_bar.dart';
-import 'package:ankitjailwal/widgets/carousel.dart';
-import 'package:ankitjailwal/widgets/destination_heading.dart';
-import 'package:ankitjailwal/widgets/featured_heading.dart';
-import 'package:ankitjailwal/widgets/featured_tiles.dart';
-import 'package:ankitjailwal/widgets/responsive.dart';
-import 'package:ankitjailwal/widgets/top_bar_contents.dart';
+import 'package:explore/widgets/about_heading.dart';
+import 'package:explore/widgets/auth_dialog.dart';
+import 'package:explore/widgets/web_scrollbar.dart';
+import 'package:explore/widgets/bottom_bar.dart';
+import 'package:explore/widgets/carousel.dart';
+import 'package:explore/widgets/destination_heading.dart';
+import 'package:explore/widgets/featured_heading.dart';
+import 'package:explore/widgets/featured_tiles.dart';
+import 'package:explore/widgets/responsive.dart';
+import 'package:explore/widgets/top_bar_contents.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {

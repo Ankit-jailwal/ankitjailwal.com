@@ -1,8 +1,8 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:ankitjailwal/widgets/responsive.dart';
+import 'package:explore/widgets/responsive.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:ankitjailwal/widgets/bottom_bar.dart';
+import 'package:explore/widgets/bottom_bar.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class DestinationCarousel extends StatefulWidget {

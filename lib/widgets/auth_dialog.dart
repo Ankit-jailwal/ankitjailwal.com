@@ -1,3 +1,4 @@
+import 'package:explore/widgets/responsive.dart';
 import 'package:flutter/material.dart';
 
 class AuthDialog extends StatefulWidget {
@@ -10,7 +11,7 @@ class _AuthDialogState extends State<AuthDialog> {
   Widget build(BuildContext context) {
     return Dialog(
       backgroundColor: Theme.of(context).backgroundColor,
-      shape: RoundedRectangleBorder(
+      shape: ResponsiveWidget.isSmallScreen(context)?null:RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(8.0),
       ),
       child: SingleChildScrollView(
