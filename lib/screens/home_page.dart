@@ -182,7 +182,7 @@ class _HomePageState extends State<HomePage> {
                           child: Opacity(
                             opacity: 1-_opacity,
                             child: Image.asset(
-                              'assets/images/backDark.jpg',
+                              'assets/images/backDark.png',
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -200,7 +200,7 @@ class _HomePageState extends State<HomePage> {
                             child: Opacity(
                               opacity: 1-_opacity,
                               child: Image.asset(
-                                'assets/images/backLight.jpg',
+                                'assets/images/backLight.png',
                                 fit: BoxFit.cover,
                               ),
                             ),
