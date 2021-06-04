@@ -1,5 +1,5 @@
 # Personal Portfolio Website
-I built my personal Portfolio websit using flutter web and hosted it using Firebase hosting.
+I built my personal Portfolio website using flutter web and hosted it using Firebase hosting.
 
 ## Features:
 1. Dark/Light mode along with transitions.
